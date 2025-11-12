@@ -9,7 +9,7 @@ while play:
   guesses_made = []
   counter = 5
   magic_number = rd.randint(1, 100)
-  print(magic_number)
+  #print(magic_number)
 
   guess = int(input("Guess a number between 1 and 100: "))
   os.system("clear")
@@ -44,6 +44,7 @@ while play:
   print("Games Played: %s" % (games_played))
   
   play = input("Would you like to play again? (y/n): ")
+  os.system("clear")
   if play == "y":
     play = True
     counter = 5 
